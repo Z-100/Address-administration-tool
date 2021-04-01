@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <center>
+      <TableView fx:id="table" prefHeight="294.0" prefWidth="477.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <AnchorPane prefHeight="307.0" prefWidth="142.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="newFirstname" layoutX="10.0" layoutY="42.0" prefHeight="25.0" prefWidth="122.0" promptText="Enter firstname" />
+            <TextField fx:id="newLastname" layoutX="10.0" layoutY="76.0" prefHeight="25.0" prefWidth="122.0" promptText="Enter lastname" />
+            <TextField fx:id="newStreetname" layoutX="10.0" layoutY="110.0" prefHeight="25.0" prefWidth="122.0" promptText="Enter streetname" />
+            <TextField fx:id="newZIP" layoutX="10.0" layoutY="144.0" prefWidth="122.0" promptText="Enter ZIP" />
+            <Label layoutX="32.0" layoutY="14.0" text="Add addresses" />
+            <MenuBar fx:id="menuBar" layoutX="-1.0" layoutY="327.0" prefHeight="28.0" prefWidth="143.0">
+              <menus>
+                <Menu mnemonicParsing="true" text="_File">
+                  <items>
+                    <MenuItem fx:id="closeButton" mnemonicParsing="true" text="_Close" />
+                        <MenuItem fx:id="saveButton" mnemonicParsing="true" text="_Save to JSON">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="refreshButton" mnemonicParsing="true" text="_Refresh">
+                           <accelerator>
+                              <KeyCodeCombination alt="UP" code="R" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="true" text="_Edit">
+                  <items>
+                    <MenuItem fx:id="deleteButton" mnemonicParsing="true" text="_Delete">
+                           <accelerator>
+                              <KeyCodeCombination alt="ANY" code="DELETE" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                           </accelerator></MenuItem>
+                        <MenuItem fx:id="editButton1" mnemonicParsing="true" text="Edit mode _on" />
+                        <MenuItem fx:id="editButton2" mnemonicParsing="true" text="Edit mode o_ff" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="true" text="_Help">
+                  <items>
+                    <MenuItem fx:id="aboutButton" mnemonicParsing="true" text="_About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Slider fx:id="saveSlider" layoutX="9.0" layoutY="259.0" prefHeight="14.0" prefWidth="122.0" />
+            <Label layoutX="15.0" layoutY="233.0" text="Swipe to save address" />
+         </children>
+      </AnchorPane>
+   </left>
+   <bottom>
+      <AnchorPane prefHeight="16.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="time" layoutX="649.0" text="HH:MM" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <right>
+      <AnchorPane prefHeight="360.0" prefWidth="18.0" BorderPane.alignment="CENTER" />
+   </right>
+   <top>
+      <AnchorPane prefHeight="14.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="34.0" text="Address administration tool: business education pro edition version 1.1         ">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>
