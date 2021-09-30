@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.Controller">
    <center>
       <TableView fx:id="table" prefHeight="294.0" prefWidth="477.0" BorderPane.alignment="CENTER" />
    </center>
@@ -67,7 +67,7 @@
    <top>
       <AnchorPane prefHeight="14.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="34.0" text="Address administration tool: business education pro edition version 1.1         ">
+            <Label layoutX="34.0" text="main.java.Address administration tool: business education pro edition version 1.1         ">
                <font>
                   <Font size="20.0" />
                </font>
